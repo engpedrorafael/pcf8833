@@ -4,8 +4,16 @@ PCF8833 LCD python bindings for the Raspberry Pi
 Schematics &amp; python module to drive a PCF8833 LCD [as used on Nokia 6100] <br/>
 This project is intended to help who wants to create a cheap prototype setup to interface an LCD controlled by the Philips PCF8833 chip.
 
-![PCF8833](https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/LCD6100.jpg)
-
+<table>
+  <tr>
+    <td>
+      <img src="https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/LCD6100.jpg"/>
+    </td>
+    <td>
+      specifications:<br/>
+    </td>
+  </tr>
+</table>
 
 Further technical details for the LCD screen can be found in the 
 [datasheet](https://raw.github.com/engpedrorafael/pcf8833/master/doc/PCF8833.pdf) [PDF].
@@ -38,16 +46,41 @@ Next, test at the hardware and software is working:
 
 Wiring schematic
 ----------------
-
-![Wiring Schematic](link here)
-
+<table>
+  <tr>
+    <td>
+      <img src="https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/lcdpinout.jpg"/>
+    </td>
+    <td>
+      Here more
+    </td>
+  </tr>
+</table>
+Something more
+<table>
+  <tr>
+    <td>
+      <img src="https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/GPIOs.png"/>
+    </td>
+    <td>
+      <img src="https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/shematics.png"/>
+    </td>
+  </tr>
+</table>
 Describe pinouts and components here
 
-Cheap Prototype  
+Cheap Prototype
 -----------------
-![Wiring Schematic](link here)
+This can be tested with an old or broken NOKIA 6100 with a working LCD. Because it's hard to connect to the LCD directly because of the very small LCD connector, one can use the phone's PCB to easily connect wires to the LCD as the LCD pins are mapped in the cooper connection under the LCD as shown in the image:
 
-![Wiring Schematic](link here)
+![Phone PCB connections](https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/phonePCB.jpg)
+
+And here it is working!
+
+![Tesing](https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/prototype.jpg)
+
+![Test image](https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/testImage.jpg)
+
 
 
 References
