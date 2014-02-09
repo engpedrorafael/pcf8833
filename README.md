@@ -1,4 +1,4 @@
-PDF8833 LCD python bindings for the Raspberry Pi
+PCF8833 LCD python bindings for the Raspberry Pi
 =======
 
 Schematics &amp; python module to drive a PCF8833 LCD [as used on Nokia 6100] <br/>
