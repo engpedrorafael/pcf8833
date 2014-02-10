@@ -84,6 +84,7 @@ Wiring schematic
 </table>
 The LCD backlight leds need to be driven from a different power source arrount 7V or needs a booster DC/DC converter.
 This implementation uses a separate power source of 8V and a potentiometer of 470 hom so that backlight can be tuned to perfect bright intensity.
+The Raspberry Pi can also be powered from the GPIO connector as shown here.
 
 Cheap Prototype
 -----------------
