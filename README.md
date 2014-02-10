@@ -83,7 +83,7 @@ Wiring schematic
   </tr>
 </table>
 The LCD backlight leds need to be driven from a different power source arrount 7V or needs a booster DC/DC converter.
-This implementation uses a separate power source of 8V and a potentiometer of 470 hom so that backlight can be tuned to perfect bright intensity.
+This implementation uses a separate power source of 8V and a potentiometer of 470 hom so that backlight can be tuned to perfect bright intensity.  
 The Raspberry Pi can also be powered from the GPIO connector as shown here.
 
 Cheap Prototype
@@ -92,7 +92,7 @@ This can be tested with an old or broken NOKIA 6100 with a working LCD. Because 
 
 ![Phone PCB connections](https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/phonePCB.jpg)
 
-And here it is working!
+##And here it is working!
 
 ![Tesing](https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/prototype.jpg)
 ![Test image](https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/testImage.jpg)  
