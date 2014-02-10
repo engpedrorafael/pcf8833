@@ -10,15 +10,15 @@ This project is intended to help who wants to create a cheap prototype setup to 
       <img src="https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/LCD6100.jpg"/>
     </td>
     <td>
-      Specification:
-<table>
-<tr><td>LCD controller</td><td>Philips PFC8833</td></tr>
-<tr><td>Interface</td><td>SPI Serial connection</td></tr>
-<tr><td>Pixel resolution</td><td>132x132 pixels</td></tr>
-<tr><td>Color resolution</td><td>12 bits (4096 colors)</td></tr>
-<tr><td>Visible area</td><td>3cm x 3cm</td></tr>
-<tr><td>Operating voltage</td><td>3.3V</td></tr>
-</table>
+      <strong>Specification:</strong>
+      <table>
+      <tr><td><strong>LCD controller</strong></td><td>Philips PFC8833</td></tr>
+      <tr><td><strong>Interface</strong></td><td>SPI Serial connection</td></tr>
+      <tr><td><strong>Pixel resolution</strong></td><td>132x132 pixels</td></tr>
+      <tr><td><strong>Color resolution</strong></td><td>12 bits (4096 colors)</td></tr>
+      <tr><td><strong>Visible area</strong></td><td>3cm x 3cm</td></tr>
+      <tr><td><strong>Operating voltage</strong></td><td>3.3V</td></tr>
+      </table>
     </td>
   </tr>
 </table>
@@ -32,6 +32,7 @@ Compile and install the wiringPi python bindings from https://github.com/rm-hull
 
 Next, install PIL (Python Imaging Library) as follows:
 
+    
     $ sudo apt-get install zlibc libjpeg-dev libpng3 libfreetype6 libfreetype6-dev python-pip
     $ find /usr/lib -name libjpeg.so
     $ sudo ln -s /usr/lib/arm-linux-gnueabihf/libjpeg.so /usr/lib/
@@ -60,62 +61,17 @@ Wiring schematic
       <img src="https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/lcdpinout.jpg"/>
     </td>
     <td>
-      table border="1" cellpadding="3" cellspacing="0">
-<tr>
-<td>1</td>
-<td>VDD 3,3V</td>
-<td> </td>
-</tr>
-<tr>
-<td>2</td>
-<td>/Reset</td>
-<td>PB4</td>
-</tr>
-<tr>
-<td>3</td>
-<td>SDATA</td>
-<td>PB3</td>
-</tr>
-<tr>
-<td>4</td>
-<td>SCLK</td>
-<td>PB5</td>
-</tr>
-<tr>
-<td>5</td>
-<td>/CS</td>
-<td>PB2</td>
-</tr>
-<tr>
-<td>6</td>
-<td>VLCD 3,3V</td>
-<td> </td>
-</tr>
-<tr>
-<td>7</td>
-<td>NC</td>
-<td> </td>
-</tr>
-<tr>
-<td>8</td>
-<td>GND</td>
-<td> </td>
-</tr>
-<tr>
-<td>9</td>
-<td>LED-</td>
-<td> </td>
-</tr>
-<tr>
-<td>10</td>
-<td>LED+ (6V)</td>
-<td> </td>
-</tr>
-</table>
+      <table>
+        <tr><td><strong>Pin<strong></td><td><strong>Function</strong></td><td><strong>Pin<strong></td><td><strong>Function</strong></td></tr>
+        <tr><td>1</td><td>VDD 3,3V</td><td>6</td><td>VLCD 3,3V</td></tr>
+        <tr><td>2</td><td>/Reset</td><td>7</td><td>NC</td></tr>
+        <tr><td>3</td><td>SDATA</td><td>8</td><td>GND</td></tr>
+        <tr><td>4</td><td>SCLK</td><td>9</td><td>LED-</td></tr>
+        <tr><td>5</td><td>/CS</td><td>10</td><td>LED+ (6V)</td></tr>
+      </table>
     </td>
   </tr>
 </table>
-Something more
 <table>
   <tr>
     <td>
@@ -126,7 +82,8 @@ Something more
     </td>
   </tr>
 </table>
-Describe pinouts and components here
+The LCD backlight leds need to be driven from a different power source arrount 7V or needs a booster DC/DC converter.
+This implementation uses a separate power source of 8V and a potentiometer of 470 hom so that backlight can be tuned to perfect bright intensity.
 
 Cheap Prototype
 -----------------
@@ -137,9 +94,7 @@ This can be tested with an old or broken NOKIA 6100 with a working LCD. Because 
 And here it is working!
 
 ![Tesing](https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/prototype.jpg)
-
-![Test image](https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/testImage.jpg)
-
+![Test image](https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/testImage.jpg)  
 
 
 References
