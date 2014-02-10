@@ -10,7 +10,15 @@ This project is intended to help who wants to create a cheap prototype setup to 
       <img src="https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/LCD6100.jpg"/>
     </td>
     <td>
-      specifications:<br/>
+      Specification:
+<table>
+<tr><td>LCD controller</td><td>Philips PFC8833</td></tr>
+<tr><td>Interface</td><td>SPI Serial connection</td></tr>
+<tr><td>Pixel resolution</td><td>132x132 pixels</td></tr>
+<tr><td>Color resolution</td><td>12 bits (4096 colors)</td></tr>
+<tr><td>Visible area</td><td>3cm x 3cm</td></tr>
+<tr><td>Operating voltage</td><td>3.3V</td></tr>
+</table>
     </td>
   </tr>
 </table>
@@ -52,7 +60,58 @@ Wiring schematic
       <img src="https://raw.github.com/engpedrorafael/pcf8833/master/doc/images/lcdpinout.jpg"/>
     </td>
     <td>
-      Here more
+      table border="1" cellpadding="3" cellspacing="0">
+<tr>
+<td>1</td>
+<td>VDD 3,3V</td>
+<td> </td>
+</tr>
+<tr>
+<td>2</td>
+<td>/Reset</td>
+<td>PB4</td>
+</tr>
+<tr>
+<td>3</td>
+<td>SDATA</td>
+<td>PB3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>SCLK</td>
+<td>PB5</td>
+</tr>
+<tr>
+<td>5</td>
+<td>/CS</td>
+<td>PB2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>VLCD 3,3V</td>
+<td> </td>
+</tr>
+<tr>
+<td>7</td>
+<td>NC</td>
+<td> </td>
+</tr>
+<tr>
+<td>8</td>
+<td>GND</td>
+<td> </td>
+</tr>
+<tr>
+<td>9</td>
+<td>LED-</td>
+<td> </td>
+</tr>
+<tr>
+<td>10</td>
+<td>LED+ (6V)</td>
+<td> </td>
+</tr>
+</table>
     </td>
   </tr>
 </table>
