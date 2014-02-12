@@ -21,8 +21,8 @@ WHITE = (255,255,255)
 BLACK = (0,0,0)
 
 
-class LCD:
-    """LCD Class for interfacing the pcf8833 LCD driver
+class Driver:
+    """Class for interfacing the pcf8833 LCD driver
     """
    
     def __init__(self, SDATA=2, SCLK=3, RST=4, CS=14):
@@ -70,6 +70,9 @@ class LCD:
 
     def test(self):
         """Test method for testing all the functionalities"""
+
+        print "Testing LCD..."
+
         #Draw Coloured Horizontal bars
         self.colouredBars()
         time.sleep(1)
@@ -294,8 +297,7 @@ class SPI:
         
 
 if __name__ == "__main__":
-    print "Testing LCD..."
-    myLcd = LCD()
+    myLcd = Driver()
     myLcd.test()
     print "Done. You should see now Graphics in the LCD."
 
