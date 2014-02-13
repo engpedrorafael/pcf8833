@@ -34,9 +34,7 @@ Next, install PIL (Python Imaging Library) as follows:
 
     
     $ sudo apt-get install zlibc libjpeg-dev libpng3 libfreetype6 libfreetype6-dev python-pip
-    $ find /usr/lib -name libjpeg.so
-    $ sudo ln -s /usr/lib/arm-linux-gnueabihf/libjpeg.so /usr/lib/
-    $ sudo pip install PIL
+    $ sudo pip install pillow
 
 Building and installing the software
 ------------------------------------
