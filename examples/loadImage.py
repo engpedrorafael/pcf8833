@@ -5,7 +5,7 @@ from pcf8833 import lcd
 myLcd = lcd.Driver()
 
 #Load teh image to the LCD
-myLCD.loadImage("./images/testImg.jpg")
+myLcd.loadImage("./images/testImg.jpg")
 
 print "Done. You should see now a test image in the LCD."
 

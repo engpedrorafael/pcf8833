@@ -170,7 +170,7 @@ class Driver:
            self.setPixel(color)
 
     def loadImage(self,path):
-        setRegion((1,1),(self._vRes, self._hRes))
+        self.setRegion((1,1),(self._vRes, self._hRes))
         bitmap = Image.open(path)
         pixels = list(bitmap.getdata())
         pixels.reverse()
