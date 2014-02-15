@@ -71,29 +71,36 @@ class Driver:
     def test(self):
         """Test method for testing all the functionalities"""
 
-        print "Testing LCD..."
+        print "======== Testing LCD ========"
 
         #Draw Coloured Horizontal bars
+        print "Drawing 4 horizontal bars..."
         self.colouredBars()
         time.sleep(1)
 
         #Test LCD ON/OFF
+        print "Flicking LCD..."
         self.OFF()
-        time.sleep(0.250)
+        time.sleep(1)
         self.ON()
 
         #Test Clear method
+        print "Filling LCD with RED..."
         self.clear(RED)
         time.sleep(2)
 
         #Test Backgroud draw
+        print "Filling LCD with GREEND in background while LCD is OFF..."
         self.OFF()
         self.clear(GREEN)
         self.ON()
         time.sleep(3)
 
+        print "Clearing LCD with WHITE..."
         #Test Axes orientation with a graph
         self.clear(WHITE)
+
+        print "Drawing some graphics..."
         xA = range(132)
         for x in xA:
             y = int(math.sin((x*6*math.pi)/132.0)*(132.0/2.0-20)+(132.0/2))
@@ -110,6 +117,7 @@ class Driver:
         for x in xA:
             self.setSinglePixel((x, x), BLUE)
 
+        print "All tests done."
 
     def setPixel(self, color):
         """Set a pixel to a specific color
